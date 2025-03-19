@@ -68,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem; /* Отступ между элементами */
+  gap: 2rem; /* Отступ между элементами */
   padding: 1rem 0;
   border-top: 1px solid var(--border-color); /* Линия разделения */
 }
@@ -211,5 +211,10 @@ body {
 
   .search-container {
     width: 100%;
+  }
+
+  .catalog, .cart, .profile {
+    width: 100%;
+    text-align: center;
   }
 }
