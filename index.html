@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Электроник - интернет-магазин электроники</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="frame">
+    <!-- Шапка -->
+    <header class="header">
+      <div class="logo" onclick="window.location='index.html'">
+        <div class="ellipse">
+          <span class="highlight">Э</span>
+        </div>
+        <div class="text-logo"><span class="highlight">лектроник</span></div>
+      </div>
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Основное меню -->
+    <nav class="bottom-menu" id="bottomMenu">
+      <div class="menu-container">
+        <div class="catalog">
+          <button class="catalog-button">Каталог ▼</button>
+          <ul class="catalog-dropdown">
+          <li><a href="#" data-category="appliances">Бытовая техника</a></li>
+          <li><a href="#" data-category="office">Офис</a></li>
+          <li><a href="#" data-category="computers">ПК, ноутбуки, периферия</a></li>
+          <li><a href="#" data-category="components">Комплектующие для ПК</a></li>
+          <li><a href="#" data-category="network">Сетевое оборудование</a></li>
+        </ul>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Поиск..." />
+        <ul id="results" class="search-results"></ul>
+      </div>
+
+
+      <div class="user-actions">
+        <div class="cart" id="cartButton">
+          <div class="cart-link">
+            <img src="images/корзина.png" alt="Корзина" class="icon" />
+            <span class="cart-counter" id="cartCounter">0</span>
+          </div>
+        </div>
+  
+        <div class="profile">
+          <img src="images/профиль.png" alt="Профиль" class="icon" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Корзина (модальное окно) -->
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-modal-content">
+        <div class="cart-modal-header">
+          <h3>Ваша корзина</h3>
+          <span class="close-modal" id="closeCartModal">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+          <!-- Товары будут добавляться сюда -->
+        </div>
+        <div class="cart-total">
+          <p>Итого: <span id="cartTotalPrice">0</span> ₽</p>
+          <button class="checkout-button">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main>
+      <!-- Товары -->
+      <section class="products" id="productsContainer">
+        <!-- Товары будут загружаться динамически -->
+      </section>
+
+      <!-- Вы недавно смотрели -->
+      <section class="recently-viewed">
+        <h2 class="section-title">Вы недавно смотрели</h2>
+        <div class="recent-products" id="recentlyViewed">
+          <!-- Просмотренные товары будут добавляться сюда -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Компания</h4>
+          <ul>
+            <li><a href="about.html">О Компании</a></li>
+            <li><a href="vacancies.html">Вакансии</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Покупателям</h4>
+          <ul>
+            <li><a href="payment.html">Способы оплаты</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Обмен, возврат, гарантия</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>На связи</h4>
+          <ul>
+            <li>8-800-54-55-888</li>
+            <li>Пн-Пт: 09:00-21:00</li>
+            <li><a href="help.html">Помощь</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://vk.com" target="_blank"><img src="images/vk.png" alt="VK" class="social-icon"></a>
+            <a href="https://telegram.org" target="_blank"><img src="images/telegram.png" alt="Telegram" class="social-icon"></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Электроник. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
