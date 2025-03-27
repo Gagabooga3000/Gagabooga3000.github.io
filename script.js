@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
       id: 2,
       title: "Смартфон iPhone 15 Pro 256GB",
       specs: "[6.1\", OLED, 2556 × 1179, A17 Pro, 48MP, титан]",
-      price: 129990,
-      oldPrice: 150000,
+      price: 1000000000000,
+      oldPrice: 1500000000,
       image: "images/iphone.jpg",
       category: "phones"
     },
